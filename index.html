@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S. Praveen Kumar | E-Portfolio</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #1e40af;
+      --light: #f8fafc;
+      --text: #1e293b;
+      --muted: #64748b;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    .profile-card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      padding: 1.75rem;
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+      border: 1px solid var(--border);
+    }
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0.75rem 1.5rem;
+    }
+    .profile-grid dt {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .profile-grid dd {
+      font-weight: 500;
+    }
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border);
+    }
+    section h2 {
+      color: var(--accent);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    section h2::before {
+      content: '';
+      width: 4px;
+      height: 1.1rem;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+    section p, section li {
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.4rem;
+    }
+    ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .tag {
+      background: #eff6ff;
+      color: #1e40af;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.75rem; }
+      .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+      }
+      .profile-grid dt { margin-top: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>E-PORTFOLIO</h1>
+    <p>S. Praveen Kumar | Computer Science and Engineering</p>
+  </header>
+
+  <div class="container">
+    <div class="profile-card">
+      <dl class="profile-grid">
+        <dt>Full Name</dt>
+        <dd>S. Praveen Kumar</dd>
+        <dt>Register Number</dt>
+        <dd>111526102174</dd>
+        <dt>Department</dt>
+        <dd>Computer Science and Engineering (CSE)</dd>
+        <dt>College</dt>
+        <dd>R.M.D. Engineering College</dd>
+        <dt>Year of Study</dt>
+        <dd>First Year (provisional)</dd>
+      </dl>
+    </div>
+
+    <section>
+      <h2>1. About Me</h2>
+      <p>I am S. Praveen Kumar, a Computer Science and Engineering student at R.M.D. Engineering College. I am interested in learning new technologies, developing creative ideas and improving my programming and problem-solving skills.</p>
+    </section>
+
+    <section>
+      <h2>2. Career Objective</h2>
+      <p>My ambition is to become a successful entrepreneur by identifying real-world problems, developing innovative solutions and creating opportunities for others.</p>
+    </section>
+
+    <section>
+      <h2>3. Technical Skills</h2>
+      <ul>
+        <li>C Programming – learning</li>
+        <li>Python – learning</li>
+        <li>Computer Fundamentals</li>
+        <li>Problem Solving</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Project Experience</h2>
+      <p><strong>Smart Healthcare Management System</strong><br>
+      An academic project idea focused on using technology to support healthcare management and make access to information more convenient.</p>
+    </section>
+
+    <section>
+      <h2>5. Interests</h2>
+      <div class="interests">
+        <span class="tag">Exploring technology</span>
+        <span class="tag">Learning new things</span>
+        <span class="tag">Developing innovative ideas</span>
+        <span class="tag">Entrepreneurship</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>6. Future Goals</h2>
+      <ul>
+        <li>Strengthen my programming and technical knowledge.</li>
+        <li>Build useful and innovative projects.</li>
+        <li>Gain practical experience in entrepreneurship.</li>
+        <li>Establish my own successful company.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Declaration</h2>
+      <p>I declare that the information provided in this E-Portfolio is true to the best of my knowledge.</p>
+      <p style="margin-top: 1rem; font-weight: 600;">S. Praveen Kumar<br><span style="font-weight: 400; color: var(--muted);">CSE Student</span></p>
+    </section>
+  </div>
+
+  <footer>
+    E-Portfolio | 2026
+  </footer>
+</body>
+</html>
